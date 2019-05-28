@@ -42,3 +42,4 @@ weather_color_refer = dict([('mostlysunny', 'orangered'),
                             ('clear', 'cornsilk'),
                             ('hazy', 'darkgray'),
                             ('tstorms', 'tan')])
+

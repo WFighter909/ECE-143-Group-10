@@ -123,6 +123,9 @@ def get_yearly_start_end(year=1990):
         end_date = '20190430'
     return start_date, end_date
 
+def get_month_str(month):
+    assert isinstance(month, int) and 1 <= month <= 12, 'Month is out of range'
+    return calendar.month_name[month]
 
 if __name__ == '__main__':
     city = 'KSAN'
