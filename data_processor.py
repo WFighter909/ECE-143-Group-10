@@ -118,6 +118,7 @@ def get_monthly_start_end(year=1990, month=1):
 def get_yearly_start_end(year=1990):
     assert isinstance(year, int) and 1990 <= year <= 2019, 'Input year is invalid'
     start_date = str(year) + '0101'
+    end_date = str(year) + '1231'
     if year == 2019:
         end_date = '20190430'
     return start_date, end_date
@@ -130,3 +131,8 @@ if __name__ == '__main__':
     get_info(city, start_date, end_date, info_type='weather')
     start, end = get_monthly_start_end(year=1990, month=2)
     print(start, end)
+    # get icon list
+    weather_info = get_info(city, 19900101, 20190430, info_type='weather')
+    keys = weather_info.index.tolist()
+    values = weather_info.days.tolist()
+    print(keys)

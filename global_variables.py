@@ -32,11 +32,13 @@ city_code_refer = {'Seattle':'KSEA',
                    'Washington DC':'KDCA'}
 code_city_refer = dict([(city_code_refer[city],city) for city in city_code_refer.keys()])
 
-weather_color_refer = dict([('rain','blue'),
-                            ('partlysunny','red'),
-                            ('mostlysunny','coral'),
-                            ('partlycloudy','lightblue'),
-                            ('mostlycloudy','cyan'),
-                            ('clear','ivory'),
-                            ('tstorms','tan'),
-                            ('hazy','grey')])
+
+weather_color_refer = dict([('mostlysunny', 'orangered'),
+                            ('partlysunny', 'lightsalmon'),
+                            ('cloudy', 'aliceblue'),
+                            ('mostlycloudy', 'skyblue'),
+                            ('partlycloudy', 'deepskyblue'),
+                            ('rain', 'dodgerblue'),
+                            ('clear', 'cornsilk'),
+                            ('hazy', 'darkgray'),
+                            ('tstorms', 'tan')])
