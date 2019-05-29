@@ -141,7 +141,7 @@ def print_info(city='KSAN', date='19900101',key_step=5):
 
 if __name__ == '__main__':
     # info
-    print_info()
+    #print_info()
     # gather data
     '''
     start_date = '19900101'
@@ -151,6 +151,9 @@ if __name__ == '__main__':
         generate_csvfile(city, start_date, end_date, filename=fname)
         print('-------------------------------------------')
     '''
+    start_date = '19900101'
+    end_date = '19951231'
+    generate_csvfile('KSAN', start_date, end_date, filename='fake.csv')
     pass
 
 

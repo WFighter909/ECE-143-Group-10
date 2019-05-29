@@ -40,8 +40,17 @@ Global Warming (Climate Change) in United States
         5. global_variables.py
         
             Global variables. Including the columns information
+            
+        6. plot_generator.py
+           
+            To batchly generate images.
      
      3. Jupyter Notebook Files
+     
+        1. Data Visualization.ipynb
+        
+            Integrated data visualization code
+            
         1. data_visualization_precipitation.ipynb
             
             Visualization and plotting precipitation data of a single city and all cities's comparison.
