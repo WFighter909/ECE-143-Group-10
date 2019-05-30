@@ -26,6 +26,6 @@ if __name__ == '__main__':
     for city in list(city_code_refer.values()):
         clean_data('data/{}.csv'.format(city))
     '''
-    clean_data('fake.csv')
+    #clean_data('data/fake.csv')
 
     pass
