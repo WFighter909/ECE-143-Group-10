@@ -66,12 +66,25 @@ def yearly_plot():
             os.makedirs('pics/{}/weather/'.format(city))
         year_start, year_end = get_yearly_start_end(year=year)
         weather_info = get_info(city, year_start, year_end, info_type='weather')
+
         keys = weather_info.index.tolist()
         values = weather_info.days.tolist()
+        kv_map = dict([(list(weather_color_refer.keys())[i], 0) for i in range(len(weather_color_refer.keys()))])
+        for i in range(len(keys)):
+            kv_map[keys[i]] = values[i]
+        new_map = {'sunny': kv_map['mostlysunny'] + kv_map['partlysunny'],
+                   'clear': kv_map['clear'],
+                   'cloudy': kv_map['cloudy'] + kv_map['mostlycloudy'] + kv_map['partlycloudy'],
+                   'rain': kv_map['rain'],
+                   'disaster': kv_map['hazy'] + kv_map['tstorms']}
+
+        print(new_map)
+        keys = list(new_map.keys())
+        values = list(new_map.values())
 
         # Plot
         plt.figure(figsize=(20, 23))
-        color_list = list(weather_color_refer[k] for k in keys)
+        color_list = list(new_weather_color_refer[k] for k in keys)
         patches, label_text, percent_text = plt.pie(values,
                                                     explode=tuple([0.02] * len(keys)),
                                                     labels=keys,
@@ -83,17 +96,17 @@ def yearly_plot():
         plt.axis('equal')
         plt.legend(loc='lower left', fontsize='x-large')
         for t in label_text:
-            t.set_size(20)
+            t.set_size(35)
         for t in percent_text:
-            t.set_size(20)
+            t.set_size(35)
         title_str = '{}\'s Weather Situation in Year {}'.format(code_city_refer[city], year)
-        plt.title(title_str, fontsize='xx-large', fontweight='bold')
+        plt.title(title_str, fontsize=30, fontweight='bold')
         plt.savefig(fname)
-
+        # plt.show()
         '''Chage Code end'''
     pass
 
 if __name__=='__main__':
     #monthly_plot()
-    #yearly_plot()
+    yearly_plot()
     pass
