@@ -18,9 +18,7 @@ def monthly_plot():
         if not os.path.exists('pics/{}/temperature/'.format(city)):
             os.makedirs('pics/{}/temperature/'.format(city))
         start_year = 1990
-        end_year = 2019
-        if month > 4:
-            end_year = 2018
+        end_year = 2018
         monthly_avg_temp_list = []
         yearly_avg_temp_list = []
         for year in range(start_year, end_year + 1):
@@ -36,18 +34,17 @@ def monthly_plot():
         plt.figure(figsize=(20, 10))
         plt.plot(range(start_year, end_year), monthly_avg_temp_list[:-1])
         plt.plot(range(start_year, end_year), yearly_avg_temp_list[:-1], '--')
-        title_str = '{}\'s Average Temperature Situation of {} in All Years'.format(get_month_str(month),
-                                                                                    code_city_refer[city])
-        plt.xlabel('Year')
-        plt.ylim([1990, 2019])
-        plt.ylabel('Fahrenheit')
-        plt.ylim([55, 80])
-        plt.title(title_str, fontsize='xx-large', fontweight='bold')
-        plt.legend(['Monthly average temperature', 'Yearly average temperature'])
+        title_str = '{}'.format(get_month_str(month))
+        plt.xlabel('Year', {'size': 25})
+        plt.ylim([1990, 2018])
+        plt.ylabel('Fahrenheit', {'size': 25})
+        plt.ylim([50, 80])
+        plt.tick_params(labelsize=23)
+        plt.title(title_str, fontsize=28, fontweight='bold')
+        plt.legend(['Monthly average temperature', 'Yearly average temperature'], prop={'weight': 'normal', 'size': 20},
+                   loc=1)
         plt.grid()
         plt.savefig(fname)
-        # plt.show()
-
         '''Chage Code end'''
     pass
 
@@ -64,9 +61,9 @@ def yearly_plot():
         # Code
         if not os.path.exists('pics/{}/weather/'.format(city)):
             os.makedirs('pics/{}/weather/'.format(city))
+
         year_start, year_end = get_yearly_start_end(year=year)
         weather_info = get_info(city, year_start, year_end, info_type='weather')
-
         keys = weather_info.index.tolist()
         values = weather_info.days.tolist()
         kv_map = dict([(list(weather_color_refer.keys())[i], 0) for i in range(len(weather_color_refer.keys()))])
@@ -83,10 +80,10 @@ def yearly_plot():
         values = list(new_map.values())
 
         # Plot
-        plt.figure(figsize=(20, 23))
+        plt.figure(figsize=(20, 20))
         color_list = list(new_weather_color_refer[k] for k in keys)
         patches, label_text, percent_text = plt.pie(values,
-                                                    explode=tuple([0.02] * len(keys)),
+                                                    # explode= tuple([0.02]*len(keys)),
                                                     labels=keys,
                                                     colors=color_list,
                                                     autopct='%3.2f%%',  # digits
@@ -94,19 +91,19 @@ def yearly_plot():
                                                     startangle=90,  # reverse start angle
                                                     pctdistance=0.6)  # 数值距圆心半径倍数距离
         plt.axis('equal')
-        plt.legend(loc='lower left', fontsize='x-large')
+        # plt.legend(loc='lower left',fontsize='25')
         for t in label_text:
-            t.set_size(35)
+            t.set_size(0)
         for t in percent_text:
             t.set_size(35)
-        title_str = '{}\'s Weather Situation in Year {}'.format(code_city_refer[city], year)
-        plt.title(title_str, fontsize=30, fontweight='bold')
+        title_str = '{}'.format(year)
+        plt.title(title_str, fontsize=70, fontweight='bold')
         plt.savefig(fname)
-        # plt.show()
         '''Chage Code end'''
     pass
 
 if __name__=='__main__':
-    #monthly_plot()
-    yearly_plot()
+    monthly_plot()
+    #yearly_plot()
+
     pass
