@@ -1,5 +1,5 @@
 # ECE-143-Group-10
-Global Warming (Climate Change) in United States
+## Global Warming (Climate Change) in United States
 
 1. Introduction
     
@@ -51,18 +51,6 @@ Global Warming (Climate Change) in United States
         
             Integrated data visualization code
             
-        1. data_visualization_precipitation.ipynb
-            
-            Visualization and plotting precipitation data of a single city and all cities's comparison.
-            
-        2. data_visualization_temperature.ipynb
-        
-            Visualization and plotting temperature data of a single city and all cities's comparison.
-        
-        3. data_visualization_weather.ipynb
-        
-            Visualization and plotting weather data of a single city and all cities's comparison.
-            
         4. others
             
             Some historical code and demo.
@@ -75,7 +63,28 @@ Global Warming (Climate Change) in United States
         
         Presentation ppt.
         
-3. Links
+3. Reuse Code Guideline
+
+    1. Find the city code in the reference or on the website's url (4 character string,usually start with 'K')
+    
+    2. Use the data_crawler.py, change the parameters: start_date, end_data and city to generate generate a .csv file
+    containing all original data
+    
+    3. Get to the data_cleaner.py, specify the .csv file name to generated the cleaned data. (will create a new 
+    .csv file from xxx.csv to xxx_cleaned.csv)
+    
+    4. Use the Jupyter-notebook to generate all the plots. Also, you can use plot_generator.py (which is just a for 
+    loop wrapper function) to generate plots by year/month wise. (remember to change the parameters)
+    
+    5. Note: 
+ 
+        1. The selected columns, the color of the weather representation can be modified in the global_variables.py
+        
+        2. data_generator.py 's main function has been comment, it just a example of combing the collecting and cleaning
+        process, and also to generate all cities' cleaned data at once in a for-loop  
+
+    
+4.  Relative Links
 
     [Underground weather](https://www.wunderground.com/history/daily/us/ca/san-diego/KSAN/date/2019-4-30)
     

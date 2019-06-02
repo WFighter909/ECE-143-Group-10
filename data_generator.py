@@ -18,3 +18,4 @@ if __name__ == '__main__':
         clean_data('data/{}.csv'.format(city))
         print('----------------data cleaned----------------')
     '''
+    pass
