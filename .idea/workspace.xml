@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5b223f2-2861-40ac-a3e5-13d0fdaebecb" name="Default Changelist" comment="" />
+    <list default="true" id="e5b223f2-2861-40ac-a3e5-13d0fdaebecb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Coorelation_Precipitation.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Correlation_temperature.ipynb" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +27,15 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Data Visualization.ipynb">
+          <provider selected="true" editor-type-id="ipnb-editor">
+            <state>
+              <selected id="0" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Coorelation_Precipitation.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
               <selected id="0" />
@@ -292,6 +304,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24498416" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -332,7 +345,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pics/KSAN/lowest_temperature/m11_plot.jpg" />
     <entry file="file://$PROJECT_DIR$/pics/KSAN/lowest_temperature/m7_plot.jpg" />
     <entry file="file://$PROJECT_DIR$/pics/KSAN/temperature/all_plot.jpg">
       <provider selected="true" editor-type-id="images" />
@@ -504,6 +516,13 @@
             <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Coorelation_Precipitation.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
         </state>
       </provider>
     </entry>
