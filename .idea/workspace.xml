@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5b223f2-2861-40ac-a3e5-13d0fdaebecb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Coorelation_Precipitation.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Correlation_temperature.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coorelation_Precipitation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Coorelation_Precipitation.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Correlation_temperature.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Correlation_temperature.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Visualization.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Data Visualization.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,32 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plot_generator.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="675">
               <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
-              <folding>
-                <element signature="e#1907#4195#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Data Visualization.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="0" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Coorelation_Precipitation.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="0" />
             </state>
           </provider>
         </entry>
@@ -112,6 +92,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -123,7 +104,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -304,7 +284,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24498416" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -345,7 +324,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pics/KSAN/lowest_temperature/m7_plot.jpg" />
     <entry file="file://$PROJECT_DIR$/pics/KSAN/temperature/all_plot.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -364,13 +342,7 @@
     <entry file="file://$PROJECT_DIR$/pics/KSAN/highest_temperature/y1999_plot.jpg" />
     <entry file="file://$PROJECT_DIR$/pics/KSAN/highest_temperature/y2002_plot.jpg" />
     <entry file="file://$PROJECT_DIR$/pics/KSAN/highest_temperature/all_plot.jpg" />
-    <entry file="file://$PROJECT_DIR$/data_visualization_temperature.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data_visualization_temperature.ipynb" />
     <entry file="file://$PROJECT_DIR$/data/fake_cleaned.csv" />
     <entry file="file://$PROJECT_DIR$/data/fake.csv" />
     <entry file="file://$USER_HOME$/Library/Jupyter/runtime/nbserver-69938-open.html">
@@ -450,26 +422,10 @@
     <entry file="file://$PROJECT_DIR$/pics/KSAN/precipitation/m10_plot.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data Visualization0522.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data Visualization0601.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test.jpg" />
+    <entry file="file://$PROJECT_DIR$/test.png" />
+    <entry file="file://$PROJECT_DIR$/Data Visualization0522.ipynb" />
+    <entry file="file://$PROJECT_DIR$/Data Visualization0601.ipynb" />
     <entry file="file://$PROJECT_DIR$/data_crawler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -499,16 +455,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plot_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
-          <folding>
-            <element signature="e#1907#4195#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -516,6 +462,13 @@
             <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Correlation_temperature.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="3" />
         </state>
       </provider>
     </entry>
@@ -530,6 +483,13 @@
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
           <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
         </state>
       </provider>
     </entry>
