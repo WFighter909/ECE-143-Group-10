@@ -62,8 +62,11 @@
     5. PPT (.pdf)
         
         Presentation ppt.
-        
-3. Reuse Code Guideline
+
+3. Libraries Dependency
+
+    numpy, pandas, seaborn, matplotlib
+4. Reuse Code Guideline
 
     1. Find the city code in the reference or on the website's url (4 character string,usually start with 'K')
     
