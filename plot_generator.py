@@ -8,43 +8,43 @@ if not os.path.exists('pics/'):
 def monthly_plot():
     for month in range(1,13):
         '''Chage Code Start'''
-
         # Parameter
         city = 'KSAN'
-        #month = 3
-        fname = 'pics/{}/temperature/m{}_plot.jpg'.format(city, month)
+        #month = 11
+        fname = 'pics/{}/precipitation/m{}_plot.jpg'.format(city, month)
 
         # Code
-        if not os.path.exists('pics/{}/temperature/'.format(city)):
-            os.makedirs('pics/{}/temperature/'.format(city))
-        start_year = 1990
+        if not os.path.exists('pics/{}/precipitation/'.format(city)):
+            os.makedirs('pics/{}/precipitation/'.format(city))
+        start_year = 1994
         end_year = 2018
-        monthly_avg_temp_list = []
-        yearly_avg_temp_list = []
+        monthly_avg_precip_list = []
+        yearly_avg_precip_list = []
         for year in range(start_year, end_year + 1):
             month_start, month_end = get_monthly_start_end(year=year, month=month)
-            weather_info = get_info(city, month_start, month_end, info_type='temperature', output=False)
-            monthly_avg_temp_list.append(weather_info['mean'])
+            weather_info = get_info(city, month_start, month_end, info_type='precipitation', output=False)
+            monthly_avg_precip_list.append(weather_info['mean'])
             year_start, year_end = get_yearly_start_end(year=year)
-            weather_info = get_info(city, year_start, year_end, info_type='temperature', output=False)
-            yearly_avg_temp_list.append(weather_info['mean'])
-        print(monthly_avg_temp_list)
+            weather_info = get_info(city, year_start, year_end, info_type='precipitation', output=False)
+            yearly_avg_precip_list.append(weather_info['mean'])
+        print(monthly_avg_precip_list)
 
         # plot
         plt.figure(figsize=(20, 10))
-        plt.plot(range(start_year, end_year), monthly_avg_temp_list[:-1])
-        plt.plot(range(start_year, end_year), yearly_avg_temp_list[:-1], '--')
+        plt.plot(range(start_year, end_year), monthly_avg_precip_list[:-1])
+        plt.plot(range(start_year, end_year), yearly_avg_precip_list[:-1], '--')
         title_str = '{}'.format(get_month_str(month))
         plt.xlabel('Year', {'size': 25})
-        plt.ylim([1990, 2018])
-        plt.ylabel('Fahrenheit', {'size': 25})
-        plt.ylim([50, 80])
+        plt.ylabel('Precipitation(mm)', {'size': 25})
+        plt.ylim([-0.15, 0.75])
         plt.tick_params(labelsize=23)
         plt.title(title_str, fontsize=28, fontweight='bold')
-        plt.legend(['Monthly average temperature', 'Yearly average temperature'], prop={'weight': 'normal', 'size': 20},
-                   loc=1)
+        plt.legend(['Monthly Average Precipitation', 'Yearly Average Precipitation'],
+                   prop={'weight': 'normal', 'size': 20}, loc=1)
         plt.grid()
         plt.savefig(fname)
+
+        #plt.show()
         '''Chage Code end'''
     pass
 
