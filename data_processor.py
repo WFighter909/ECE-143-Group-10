@@ -10,6 +10,16 @@ from global_variables import *
 
 # Process the weather icon
 def get_weather_info(city, start_date, end_date, output=True):
+    '''
+    Show weather information
+    :param city: city code
+    :param start_date: start date
+    :param end_date: end dat
+    :param output: padas.DataFrame
+    :return:
+    '''
+
+    # Code
     selected_data = select_data(city, start_date, end_date)
     weather_info = selected_data.groupby(by='icon').size()
     weather_info = pd.DataFrame(weather_info, columns=['days']).sort_values(by='days', ascending=False)
@@ -23,6 +33,20 @@ def get_weather_info(city, start_date, end_date, output=True):
 
 # Process the temperature &  the precipitation
 def get_info(city, start_date, end_date, info_type='temperature', output=True):
+    '''
+    Get info for specified information
+    :param city:
+    :param start_date:
+    :param end_date:
+    :param info_type:
+    :param output:
+    :return:
+    '''
+    # Validation
+    assert city in code_city_refer.keys()
+    # assert isinstance(start_date, str) and len(start_date) == 8
+    # assert isinstance(end_date, str) and len(end_date) == 8
+    assert info_type in ['weather', 'precipitation', 'temperature']
     if info_type == 'weather':
         return get_weather_info(city, start_date, end_date, output)
     else:
@@ -104,6 +128,12 @@ def date_to_str(current_date):
 
 
 def get_monthly_start_end(year=1990, month=1):
+    '''
+    Get a month's start and end date
+    :param year:
+    :param month:
+    :return: start date and end date
+    '''
     assert isinstance(year, int) and 1990 <= year <= 2019, 'Input year is invalid'
     assert isinstance(month, int) and 1 <= month <= 12, 'Input month is invalid'
     if year == 2019:
@@ -116,6 +146,11 @@ def get_monthly_start_end(year=1990, month=1):
 
 
 def get_yearly_start_end(year=1990):
+    '''
+    Get a year's start and end date
+    :param year: year
+    :return: start date and end date
+    '''
     assert isinstance(year, int) and 1990 <= year <= 2019, 'Input year is invalid'
     start_date = str(year) + '0101'
     end_date = str(year) + '1231'
@@ -124,6 +159,11 @@ def get_yearly_start_end(year=1990):
     return start_date, end_date
 
 def get_month_str(month):
+    '''
+    Get month string
+    :param month: month
+    :return: month string
+    '''
     assert isinstance(month, int) and 1 <= month <= 12, 'Month is out of range'
     return calendar.month_name[month]
 

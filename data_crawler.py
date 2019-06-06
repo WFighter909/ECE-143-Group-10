@@ -10,7 +10,7 @@ import warnings
 import pandas as pd
 from global_variables import *
 from datetime import datetime, timedelta
-
+import os
 warnings.filterwarnings('ignore')
 
 
@@ -21,6 +21,9 @@ def gather_data(city, date):
     :param date: str, eg:20180101
     :return: data table on the websit
     '''
+
+    # Already asserted in generate_csvfile !!!
+
     # Get data table
     session = requests.session()
     response = session.get('https://api-ak.wunderground.com/api/d8585d80376a429e/history_{}/lang:EN/units:english/bestfct:1/v:2.0/q/'
@@ -41,6 +44,9 @@ def format_data(table, date, key_list):
     :param key_list: the key name of data want to be gather
     :return: formatted data list
     '''
+
+    # Already asserted in generate_csvfile !!!
+
     data = list()
     data.append(str(date))
     for key in all_key_list[1:]:
@@ -104,6 +110,9 @@ def date_to_str(current_date):
     :param current_date: date object
     :return: 8 digit date string
     '''
+
+    # Already asserted in generate_csvfile !!!
+
     year = str(current_date.year)
     month = str(current_date.month)
     day = str(current_date.day)
@@ -123,6 +132,9 @@ def print_info(city='KSAN', date='19900101',key_step=5):
     :param key_step: the number of keys printed out every row
     :return:
     '''
+
+    # Already asserted in generate_csvfile !!!
+    
     session = requests.session()
     response = session.get(
         'https://api-ak.wunderground.com/api/d8585d80376a429e/history_{}/lang:EN/units:english/bestfct:1/v:2.0/q/'

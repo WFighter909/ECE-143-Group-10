@@ -4,6 +4,7 @@ Clean data and use forward-fill to fill the NAN
 import numpy as np
 import pandas as pd
 from global_variables import *
+import os
 
 
 def clean_data(fname):
@@ -12,6 +13,7 @@ def clean_data(fname):
     :param fname: data file name
     :return:
     '''
+    assert os.path.exists(fname),'file doesn\'t exist'
     missing_values = ["n/a", "na", "--", None,'None']
     origin_data = pd.read_csv(fname, na_values=missing_values)
     cleaned_data = origin_data[ key_list]

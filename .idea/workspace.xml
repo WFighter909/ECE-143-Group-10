@@ -3,7 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="e5b223f2-2861-40ac-a3e5-13d0fdaebecb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Data Visualization-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Data Visualization-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Visualization.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Data Visualization.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_cleaner.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_cleaner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_crawler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_processor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pics/comparison/precipitation_central_plot.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pics/comparison/precipitation_east_plot.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/pics/comparison/precipitation_east_plot.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pics/comparison/precipitation_east_zoom_plot.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/pics/comparison/precipitation_east_zoom_plot.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pics/comparison/precipitation_west_plot.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/pics/comparison/precipitation_west_plot.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pics/comparison/precipitation_west_zoom_plot.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/pics/comparison/precipitation_west_zoom_plot.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pics/comparison/temperature_central_plot.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pics/comparison/temperature_east_plot.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/pics/comparison/temperature_east_plot.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pics/comparison/temperature_west_plot.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/pics/comparison/temperature_west_plot.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,23 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plot_generator.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="320">
-                <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/data_processor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1548">
+              <caret line="47" column="9" selection-start-line="46" selection-start-column="3" selection-end-line="47" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -76,22 +76,22 @@
         <option value="$PROJECT_DIR$/data_p.py" />
         <option value="$PROJECT_DIR$/data_visualization.ipynb" />
         <option value="$PROJECT_DIR$/demo.py" />
-        <option value="$PROJECT_DIR$/data_processor.py" />
         <option value="$PROJECT_DIR$/test.ipynb" />
         <option value="$PROJECT_DIR$/data_visualization_temperature.ipynb" />
-        <option value="$PROJECT_DIR$/data_crawler.py" />
         <option value="$PROJECT_DIR$/global_variables.py" />
         <option value="$PROJECT_DIR$/Data Visualization Demo.ipynb" />
         <option value="$PROJECT_DIR$/plot_generator.py" />
-        <option value="$PROJECT_DIR$/data_cleaner.py" />
         <option value="$PROJECT_DIR$/data_generator.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/data_cleaner.py" />
+        <option value="$PROJECT_DIR$/data_crawler.py" />
+        <option value="$PROJECT_DIR$/data_processor.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1920" />
+    <option name="width" value="1440" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -138,7 +138,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.plot_generator">
+  <component name="RunManager" selected="Python.data_processor">
     <configuration name="3 - Project" type="JupiterNotebook" factoryName="Jupyter Notebook">
       <module name="3 - Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -263,10 +263,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.data_processor" />
         <item itemvalue="Python.plot_generator" />
         <item itemvalue="Python.data_cleaner" />
         <item itemvalue="Python.data_preprocess" />
-        <item itemvalue="Python.data_processor" />
         <item itemvalue="Python.data_process" />
       </list>
     </recent_temporary>
@@ -294,20 +294,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="877" extended-state="1" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24498416" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2446959" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.81942976" weight="0.22300707" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.81942976" visible="true" weight="0.22193211" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49947202" weight="0.32896066" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49841604" weight="0.32896066" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.88965154" visible="true" weight="0.2754569" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.88965154" weight="0.27415144" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50158393" side_tool="true" weight="0.32896066" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49947202" weight="0.32896066" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -437,26 +438,53 @@
     <entry file="file://$PROJECT_DIR$/test.png" />
     <entry file="file://$PROJECT_DIR$/Data Visualization0522.ipynb" />
     <entry file="file://$PROJECT_DIR$/Data Visualization0601.ipynb" />
-    <entry file="file://$PROJECT_DIR$/data_crawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="149" column="19" lean-forward="true" selection-start-line="149" selection-start-column="19" selection-end-line="149" selection-end-column="19" />
+    <entry file="file://$PROJECT_DIR$/Correlation_temperature.ipynb" />
+    <entry file="file://$PROJECT_DIR$/Coorelation_Precipitation.ipynb" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="320">
+            <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Visualization.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_cleaner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+        <state relative-caret-position="152">
+          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
           <folding>
             <element signature="e#56#74#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_processor.py">
+    <entry file="file://$PROJECT_DIR$/plot_generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-522" />
+        <state relative-caret-position="-493">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding>
+            <element signature="e#175#1937#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="136" column="4" selection-start-line="136" selection-start-column="4" selection-end-line="136" selection-end-column="4" />
+          <folding>
+            <element signature="e#99#108#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_generator.py">
@@ -466,29 +494,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Correlation_temperature.ipynb" />
-    <entry file="file://$PROJECT_DIR$/Coorelation_Precipitation.ipynb" />
-    <entry file="file://$PROJECT_DIR$/Data Visualization.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plot_generator.py">
+    <entry file="file://$PROJECT_DIR$/data_processor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="320">
-            <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
-          </first_editor>
-          <second_editor />
+        <state relative-caret-position="-1548">
+          <caret line="47" column="9" selection-start-line="46" selection-start-column="3" selection-end-line="47" selection-end-column="9" />
         </state>
       </provider>
     </entry>
