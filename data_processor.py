@@ -101,6 +101,12 @@ def select_data(city, start_date, end_date):
 
 
 def get_column(info_type):
+    '''
+    get specified columns in data frame
+    :param info_type: data frame
+    :return: selected data
+    '''
+
     column_map = dict([('weather','weather'),
                        ('temperature','temperature'),
                        ('precipitation','precip'),

@@ -6,6 +6,10 @@ if not os.path.exists('pics/'):
 
 
 def monthly_plot():
+    '''
+    Drag the monthly plot code to run a loop
+    :return:
+    '''
     for month in range(1,13):
         '''Chage Code Start'''
         # Parameter
@@ -50,6 +54,10 @@ def monthly_plot():
 
 
 def yearly_plot():
+    '''
+    Drag the yearly plot code to run a loop
+    :return:
+    '''
     for year in range(1990, 2019):
         '''Chage Code Start'''
 

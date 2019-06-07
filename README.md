@@ -44,6 +44,10 @@
         6. plot_generator.py
            
             To batchly generate images.
+            
+        7. cityMap.py
+            
+            Generate a plot of the given cities' distribution.
      
      3. Jupyter Notebook Files
      
@@ -62,10 +66,14 @@
     5. PPT (.pdf)
         
         Presentation ppt.
+        
+    6. Others
+        
+        System configure files.
 
 3. Libraries Dependency
 
-    numpy, pandas, seaborn, matplotlib
+    numpy, pandas, seaborn, matplotlib, mpl_toolkits
 4. Reuse Code Guideline
 
     1. Find the city code in the reference or on the website's url (4 character string,usually start with 'K')

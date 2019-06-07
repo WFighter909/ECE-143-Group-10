@@ -2,7 +2,9 @@
 # coding: utf-8
 
 # In[1]:
-
+'''
+Generate city distribution
+'''
 
 import os
 import conda

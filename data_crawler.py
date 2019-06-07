@@ -14,46 +14,6 @@ import os
 warnings.filterwarnings('ignore')
 
 
-def gather_data(city, date):
-    '''
-    gather the data table form website for a specific city and date
-    :param city: str, city code
-    :param date: str, eg:20180101
-    :return: data table on the websit
-    '''
-
-    # Already asserted in generate_csvfile !!!
-
-    # Get data table
-    session = requests.session()
-    response = session.get('https://api-ak.wunderground.com/api/d8585d80376a429e/history_{}/lang:EN/units:english/bestfct:1/v:2.0/q/'
-              '{}.json?showObs=0&ttl=120'.format(date, city), headers=None, verify=False)
-    dictionary = json.loads(response.text)
-    table = dictionary['history']['days'][0]['summary']
-    #print(dictionary['history']['days'][0]['summary'].keys())
-    # Gather data
-    data = format_data(table, date, key_list)
-    return data
-
-
-def format_data(table, date, key_list):
-    '''
-
-    :param table: data table
-    :param date: str
-    :param key_list: the key name of data want to be gather
-    :return: formatted data list
-    '''
-
-    # Already asserted in generate_csvfile !!!
-
-    data = list()
-    data.append(str(date))
-    for key in all_key_list[1:]:
-        data.append(str(table[key]))
-    return data
-
-
 def generate_csvfile(city, start_date, end_date, filename=""):
     '''
     gather data from start date to end date
@@ -103,6 +63,45 @@ def generate_csvfile(city, start_date, end_date, filename=""):
             current_date += timedelta(days=1)
     print('cvs file has generated to {}'.format(file.name))
 
+
+def gather_data(city, date):
+    '''
+    gather the data table form website for a specific city and date
+    :param city: str, city code
+    :param date: str, eg:20180101
+    :return: data table on the websit
+    '''
+
+    # Already asserted in generate_csvfile !!!
+
+    # Get data table
+    session = requests.session()
+    response = session.get('https://api-ak.wunderground.com/api/d8585d80376a429e/history_{}/lang:EN/units:english/bestfct:1/v:2.0/q/'
+              '{}.json?showObs=0&ttl=120'.format(date, city), headers=None, verify=False)
+    dictionary = json.loads(response.text)
+    table = dictionary['history']['days'][0]['summary']
+    #print(dictionary['history']['days'][0]['summary'].keys())
+    # Gather data
+    data = format_data(table, date, key_list)
+    return data
+
+
+def format_data(table, date, key_list):
+    '''
+
+    :param table: data table
+    :param date: str
+    :param key_list: the key name of data want to be gather
+    :return: formatted data list
+    '''
+
+    # Already asserted in generate_csvfile !!!
+
+    data = list()
+    data.append(str(date))
+    for key in all_key_list[1:]:
+        data.append(str(table[key]))
+    return data
 
 def date_to_str(current_date):
     '''
