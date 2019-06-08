@@ -3,7 +3,7 @@
 
 # In[1]:
 '''
-Generate city distribution
+Generate city distribution on the map of the United States
 '''
 
 import os
