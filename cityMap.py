@@ -3,16 +3,16 @@
 
 # In[1]:
 '''
-Generate city distribution
+Generate city distribution on the map of the United States
 '''
 
 import os
 import conda
-
-conda_file_dir = conda.__file__
-conda_dir = conda_file_dir.split('lib')[0]
-proj_lib = os.path.join(os.path.join(conda_dir, 'share'), 'proj')
-os.environ["PROJ_LIB"] = proj_lib
+#if conda dont work
+# conda_file_dir = conda.__file__
+# conda_dir = conda_file_dir.split('lib')[0]
+# proj_lib = os.path.join(os.path.join(conda_dir, 'share'), 'proj')
+# os.environ["PROJ_LIB"] = proj_lib
 from mpl_toolkits.basemap import Basemap
 from geopy.geocoders import Nominatim
 import matplotlib.pyplot as plt
